@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/portfolio.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@300&display=swap" rel="stylesheet">
+    <title>heejung's site login</title>
+    <script>
+        function login(){
+            let id = document.getElementById("id").value;
+            let pw = document.getElementById("pw").value;
+            if(id ==="admin"){
+                if(pw=="1234"){
+                    alert("로그인 성공!");
+            } else {
+                    alert("비밀번호를 확인해주세요");
+                 }
+            } else {
+                alert("회원가입을 하세요") ;
+            }
+        }
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+        }
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+                     
+    </script>
+</head>
+
+
+<header>
+    <!-- Sidebar -->
+    <div class="w3-sidebar w3-bar-block	w3-border-right" style="display:none" id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+        <a href="./img/profile.jpg" class="w3-bar-item w3-button">사이트로 돌아가기</a>
+    </div>
+    <div class="w3-panel w3-border-bottom ">
+        <button class="w3-button w3-xlarge" onclick="w3_open()">☰</button>  <br>
+    </div>
+
+</header>
+<body>
+    
+    <div class="basic_container">
+        <section>
+            <div id="login" class="w3-container w3-panel w3-border w3-round-large w3-margin-right">
+                <h3> 로그인 </h3>
+                회원ID :
+                <input type="text" name="" id="id"><br> <br>
+                비밀번호 :
+                <input type="password" name="" id="pw"><br> <br>
+                <button onclick="login()"; class= "w3-button  w3-hover-pink" style="background:hsla(9, 100%, 64%, 0.4);">로그인</button>
+                <button onclick="cancel();" class= "w3-button w3-hover-pink"  style="background:hsla(9, 100%, 64%, 0.4);">취소</button>
+                <div class="small navi w3-center">
+                    <ul class="w3-bar w3-center" style="color: grey; text-decoration: none;" >
+                        <li class="w3-bar-item w3-padding-small w3-center"><a href="midterm.html">아이디 찾기</a></li>
+                        <li class="w3-bar-item w3-padding-small w3-center"><a href="midterm.html">비밀번호 찾기</a></li>
+                        <li class="w3-bar-item w3-padding-small w3-center"><a href="resister1.html">회원가입</a></li>
+            </div>
+        </section>
+    </div>
+</body>
+
+<footer>      
+    <div>
+        <ul class="w3-bar w3-center w3-panel" style=" text-decoration: none;" >
+            <li class=" w3-padding-small w3-center-align">이용약관 / 개인정보관리방침 / 책임의한계와 법적고지 / 회원정보 고객센터</a></li>
+            <br>
+            Copyright © heejung Corp. All Rights Reserved.<br/>
+    </div>
+</footer> 
+
+</html>

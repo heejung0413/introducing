@@ -1,0 +1,51 @@
+.basic_container{
+    border: 5px solid bisque;
+    width: 50%; 
+    text-align: center;
+    margin: 50px auto;
+    padding: 30px 30px;
+}
+#mycard{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 1.5fr;
+    grid-template-rows: auto;
+}
+#carousel{
+    margin: 50px auto;
+    display: grid;
+    width:400px; height: auto;
+   
+}
+
+.accordion accordion-flush{
+    margin: 100px;
+}
+body{
+    background-color: beige; 
+    font-family: 'Gaegu', cursive; 
+    text-align: center;
+}
+.title{
+    background-color: white; 
+    margin: 30px auto; 
+    padding: 80;
+}
+footer{
+    background-color: bisque; 
+    width: auto; 
+    height: auto;
+}
+.email{
+     text-align: center;
+      padding: 25px;
+}
+header{
+    background-color: bisque; 
+    width: auto; height: auto; 
+    padding: 15px;
+}
+.profile-photo{
+    width: 150px; height: auto;
+    border-radius: 70%;
+}
